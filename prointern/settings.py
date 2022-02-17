@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-p*b)4u_u463v-$jk0doqbjnd+t0%jc2seb43kc)qy_$h@=dahd
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', 'prointernsystem.herokuapp.com/']
+ALLOWED_HOSTS = ['127.0.0.1', 'https://prointernn.herokuapp.com/']
 STATIC_DIR = os.path.join(BASE_DIR,'static')
 
 # Application definition
