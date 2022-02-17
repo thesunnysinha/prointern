@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+<body style="background-image: url({% static 'images/background.jpg' %})">
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header navbar-left">
+                <a class="btn btn-danger btn-lg" href="{% url 'prointern' %}" class="navbar-brand">Home</a>
+            </div>
+            <div class="navbar-header navbar-right">
+              <a class="btn btn-danger btn-lg" href="{% url 'signin' %}" class="navbar-brand">Sign In</a>
+          </div>
+        </div>
+      </nav>
+    <div class="container" id="image">
+        <a href="{% url 'prointern' %}"><img src="{% static 'images/prointern_logo.jpg'%}" alt="ProIntern" width="250"></a>
+    </div>
+    <div class="jumbotron">
+        {% if registered %}
+         <h1>Thank you for registering!</h1>
+        {% else %}
+         <h1>SignUp Here!</h1>
+         <h3>Fill out the form:-</h3>
+         <div class="form-group">
+            <form enctype="multipart/form-data" method="POST" >
+                {% csrf_token %}
+                {{ user_form.as_p}}
+                {{ profile_form.as_p }}
+                <input type="submit" class="btn btn-primary" value="Sign Up">
+            </form>
+         </div>
+        {% endif %}
+    </div>
+</body>
+</html>

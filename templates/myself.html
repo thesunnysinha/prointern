@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<html>
+    <head>
+        <title>Creator's Page</title>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+    <body style="background-image: url({% static 'images/background.jpg' %})">
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header navbar-left">
+                    <a class="btn btn-danger btn-lg" href="{% url 'home' %}" class="navbar-brand">Home</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="C:\Users\thesu\Dropbox\My PC (LAPTOP-NOQQ9ACL)\Desktop\Django\practice\academics.html">Academics</a></li>
+                    <li><a href="C:\Users\thesu\Dropbox\My PC (LAPTOP-NOQQ9ACL)\Desktop\Django\practice\skills.html">Skills</a></li>
+                    <li><a href="C:\Users\thesu\Dropbox\My PC (LAPTOP-NOQQ9ACL)\Desktop\Django\practice\work_exp.html">Work Experience</a></li>
+                    <li><a href="C:\Users\thesu\Dropbox\My PC (LAPTOP-NOQQ9ACL)\Desktop\Django\practice\work_exp.html">Projects</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1>Hello :)</h1>
+        <h2>Welcome to my Intro !</h2>
+        <div id="image">
+            <img src="{% static 'images/my.jpg' %}" alt="Profile Picture" width="150">
+        </div>
+        <br>
+        <br>
+        <div class="container">
+            <div id="bio">
+                Myself Sunny Kumar Sinha,I am a B.Tech Cse 3rd year student.
+                And this is my first Web development project.
+            </div>
+        
+        </div>
+        <br>
+        <div class="container" id="contact">
+            <h3>You can contact me at:</h3>
+            <br>
+            <ul>
+                <li>
+                    <a class="btn btn-success btn-lg" href="https://www.instagram.com/sunnyk.sinha/?hl=ena" role="button"><img src="instagram-logo.gif" alt="Intagram" width="125" height="40"></a>
+                </li>
+                <br>
+                <li>
+                    <a class="btn btn-success btn-lg" href="https://www.facebook.com/thesunnysinha/" role="button"><img src="facebook-logo.gif" alt="Facebook" width="125" height="40"></a>
+                </li>
+                <br>
+                <li>
+                    <a class="btn btn-success btn-lg" href="https://www.linkedin.com/in/thesunnysinha/" role="button"><img src="linkedIn-logo.gif" alt="LinkedIn" width="125" height="40"></a>
+                </li>
+            </ul>
+        </div>
+        <br>
+    </body>
+</html>

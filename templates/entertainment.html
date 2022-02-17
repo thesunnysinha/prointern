@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<html>
+    <head>
+        <title>Entertainmment</title>
+        <link rel="stylesheet" href="{% static 'css/style.css'%}">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+
+    <body style="background-image: url({% static 'images/background.jpg' %})">
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header navbar-left">
+                    <a class="btn btn-danger btn-lg" href="{% url 'home' %}" class="navbar-brand">Home</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="{% url 'games' %}">Games</a></li>
+                    <li><a href="C:\Users\thesu\Dropbox\My PC (LAPTOP-NOQQ9ACL)\Desktop\Django\practice\skills.html">Music</a></li>
+                </ul>
+            </div>
+        </nav>
+        <br>
+        <div class="container"> 
+            <h1>Welcome to BingeWatch</h1>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Ala Vaikunthapurramuloo</h1>
+                <div id="image">
+                    <p><img src="{% static 'images\Ala-Vaikuntapuramlo-Poster.jpg' %}" alt="poster" width="250" height="300"></p>
+                </div>
+                <div id="application">
+                    <p><a class="btn btn-info btn-lg" href="https://drive.google.com/file/d/1-Ea9HqorjfAI8RCosLT0X8wFfo68aDco/view?usp=sharing" role="button">Sample</a></p>
+                    <p><a class="btn btn-danger btn-lg" href="https://drive.google.com/u/2/uc?id=1QAXNTqGkbUA3Awxyfue-G29xDa4xDlXn&export=download" role="button">Download Now!</a></p>
+                    <p><a class="btn btn-success btn-lg" href="https://drive.google.com/file/d/1QAXNTqGkbUA3Awxyfue-G29xDa4xDlXn/view?usp=sharing" role="button">Watch Now!</a></p>
+                </div>
+            </div>
+            <div class="jumbotron">
+                <h1>The Matrix Resurrections</h1>
+                <div id="image">
+                    <p><img src="{% static 'images/The_Matrix_Resurrections.jpg' %}" alt="poster" width="250" height="300"></p>
+                </div>
+                <div id="application">
+                    <p><a class="btn btn-info btn-lg" href="https://drive.google.com/file/d/1e3ARgGpNn0pwZVe8MbogHNXC7gMnEt-r/view?usp=sharing" role="button">Sample</a></p>
+                    <p><a class="btn btn-danger btn-lg" href="https://drive.google.com/u/2/uc?id=1YN5z7obw57ztjXIKCWcue__MzXvxlnTx&export=download" role="button">Download Now!</a></p>
+                    <p><a class="btn btn-success btn-lg" href="https://drive.google.com/file/d/1YN5z7obw57ztjXIKCWcue__MzXvxlnTx/view?usp=sharing" role="button">Watch Now!</a></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

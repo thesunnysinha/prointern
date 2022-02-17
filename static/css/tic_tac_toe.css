@@ -1,0 +1,17 @@
+#heading{
+    text-align: center;
+}
+td{
+    height: 120px;
+    width: 120px;
+    text-align: center;
+    border: 5px solid black;
+    font-size: 100px;
+}
+
+body{
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
