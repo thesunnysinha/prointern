@@ -30,7 +30,6 @@ SECRET_KEY = 'django-insecure-p*b)4u_u463v-$jk0doqbjnd+t0%jc2seb43kc)qy_$h@=dahd
 DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', 'prointernn.herokuapp.com']
-STATIC_DIR = os.path.join(BASE_DIR,'static')
 
 # Application definition
 
@@ -44,7 +43,7 @@ INSTALLED_APPS = [
     'Home',
     'Signin',
     'SignUp',
-    'Connet_Four',
+    'Connect_Four',
     'Games',
     'Myself',
     'StudyMaterial',
@@ -140,6 +139,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [STATIC_DIR,]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 #MEDIA
 
