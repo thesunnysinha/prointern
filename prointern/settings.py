@@ -44,6 +44,9 @@ INSTALLED_APPS = [
     'Home',
     'Signin',
     'SignUp',
+    'Connet_Four',
+    'Games',
+    'Myself',
     'StudyMaterial',
     'Entertainment',
 ]
@@ -144,7 +147,7 @@ MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
 
 
-LOGIN_URL = '/Signin/signin'
+LOGIN_URL = '/Signin/signin/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
